@@ -67,4 +67,48 @@ out/
 logs/
 
 ### Docker ###
-docker-compose.override.yml
+.docker/
+**/Dockerfile
+**/Dockerfile.*
+docker-compose.yml
+docker-compose.*.yml
+!docker-compose.example.yml
+!Dockerfile.example
+
+### Environment Files ###
+.env
+**/.env
+**/.env.*
+**/env/*
+!**/.env.example
+
+### Configuration Files ###
+**/config/
+**/configs/
+!**/config/example/
+**/application-local.yml
+**/application-local.properties
+
+### Credentials ###
+**/credentials.yml
+**/credentials.properties
+**/*.pem
+**/*.key
+**/*.crt
+**/*.cer
+**/*.p12
+**/*.pfx
+
+### Logs and Temp ###
+**/logs/
+**/log/
+**/*.log
+**/temp/
+**/tmp/
+
+### IDE and Editor ###
+**/.vscode/
+**/.idea/
+**/*.swp
+**/*.swo
+**/.DS_Store
